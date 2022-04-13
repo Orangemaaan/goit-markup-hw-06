@@ -717,9 +717,6 @@
 
         <div class="backdrop is-hidden" data-modal>
             <div class="modal">
-                <p class="modal-appeal">
-                    Оставьте свои данные, мы вам перезвоним
-                </p>
                 <button type="button" class="modal-close-btn" data-modal-close>
                     <svg class="modal-close-icon" width="11" height="11">
                         <use href="./images/icons.svg#close-icon"></use>
@@ -727,39 +724,48 @@
                 </button>
 
                 <form class="modal-form">
-                    <label class="modal-label"
-                        >Имя
+                    <p class="modal-appeal">
+                        Оставьте свои данные, мы вам перезвоним
+                    </p>
+                    <div class="modal-form-field">
+                        <label class="modal-label">Имя</label>
                         <input class="contact-input" type="name" name="name" />
-                    </label>
-                    <label class="modal-label"
-                        >Телефон
+                    </div>
+                    <div class="modal-form-field">
+                        <label class="modal-label">Телефон</label>
                         <input class="contact-input" type="tel" name="tel" />
-                    </label>
-                    <label class="modal-label"
-                        >Почта
+                    </div>
+                    <div class="modal-form-field">
+                        <label class="modal-label">Почта</label>
                         <input
                             class="contact-input"
                             type="email"
                             name="email"
                         />
-                    </label>
-                    <label class="modal-label"
-                        >Комментарий
+                    </div>
+                    <div class="modal-form-field">
+                        <label class="modal-label">Комментарий</label>
                         <textarea
                             class="comment-area"
                             name="comment"
                             placeholder="Введите текст"
                             rows="6"
                         ></textarea>
-                    </label>
-                    <label class="modal-checkbox">
-                        <input type="checkbox" name="agreement" />Соглашаюсь с
-                        рассылкой и принимаю
-                        <a class="agreement-policy" href="#"
-                            >Условия договора</a
+                    </div>
+                    <div class="modal-form-field">
+                        <label class="checkbox-label"
+                            ><input
+                                type="checkbox"
+                                name="agreement"
+                            />Соглашаюсь с рассылкой и принимаю
+                            <a class="agreement-policy" href="#"
+                                >Условия договора</a
+                            ></label
                         >
-                    </label>
-                    <button class="modal-btn" type="submit">Отправить</button>
+                    </div>
+                    <button class="btn modal-btn" type="submit">
+                        Отправить
+                    </button>
                 </form>
             </div>
         </div>
