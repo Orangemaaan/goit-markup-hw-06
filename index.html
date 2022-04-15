@@ -728,40 +728,80 @@
                         Оставьте свои данные, мы вам перезвоним
                     </p>
                     <div class="modal-form-field">
-                        <label class="modal-label">Имя</label>
-                        <input class="contact-input" type="name" name="name" />
+                        <label for="name" class="modal-label">Имя </label>
+                        <div class="contact-input-wrapper">
+                            <input
+                                class="contact-input"
+                                type="name"
+                                name="name"
+                                id="name"
+                            />
+                            <svg class="contact-icon" width="18" height="18">
+                                <use
+                                    href="./images/person-black-18dp 1.svg"
+                                ></use>
+                            </svg>
+                        </div>
                     </div>
                     <div class="modal-form-field">
-                        <label class="modal-label">Телефон</label>
-                        <input class="contact-input" type="tel" name="tel" />
+                        <label for="tel" class="modal-label">Телефон </label>
+                        <div class="contact-input-wrapper">
+                            <input
+                                class="contact-input"
+                                type="tel"
+                                name="tel"
+                                id="tel"
+                            />
+                            <svg class="contact-icon" width="18" height="18">
+                                <use
+                                    href="./images/phone-black-18dp 1.svg"
+                                ></use>
+                            </svg>
+                        </div>
                     </div>
                     <div class="modal-form-field">
-                        <label class="modal-label">Почта</label>
-                        <input
-                            class="contact-input"
-                            type="email"
-                            name="email"
-                        />
+                        <label for="mail" class="modal-label">Почта </label>
+                        <div class="contact-input-wrapper">
+                            <input
+                                class="contact-input"
+                                type="email"
+                                name="email"
+                                id="mail"
+                            />
+                            <svg class="contact-icon" width="18" height="18">
+                                <use
+                                    href="./images/email-black-18dp 1.svg"
+                                ></use>
+                            </svg>
+                        </div>
                     </div>
                     <div class="modal-form-field">
-                        <label class="modal-label">Комментарий</label>
+                        <label for="comment" class="modal-label"
+                            >Комментарий</label
+                        >
                         <textarea
                             class="comment-area"
                             name="comment"
+                            id="comment"
                             placeholder="Введите текст"
                             rows="6"
                         ></textarea>
                     </div>
                     <div class="modal-form-field">
-                        <label class="checkbox-label"
-                            ><input
+                        <div class="agreement-wrapper">
+                            <input
+                                class="checkbox visually-hidden"
                                 type="checkbox"
                                 name="agreement"
-                            />Соглашаюсь с рассылкой и принимаю
-                            <a class="agreement-policy" href="#"
-                                >Условия договора</a
-                            ></label
-                        >
+                                id="agree"
+                            />
+                            <label for="agree" class="checkbox-label"
+                                >Соглашаюсь с рассылкой и принимаю
+                                <a class="agreement-policy" href="#"
+                                    >Условия договора</a
+                                ></label
+                            >
+                        </div>
                     </div>
                     <button class="btn modal-btn" type="submit">
                         Отправить
