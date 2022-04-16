@@ -780,9 +780,7 @@ section {
 }
 
 .mail-outs {
-    display: flex;
-    margin-left: auto;
-    align-items: center;
+    margin: 0 auto;
 }
 
 .subcribe {
@@ -793,6 +791,11 @@ section {
     text-transform: uppercase;
 
     color: var(--text-color-theme-light);
+}
+
+.footer-form {
+    display: flex;
+    align-items: baseline;
 }
 
 .footer-form input {
@@ -829,7 +832,6 @@ section {
     display: flex;
     justify-content: center;
     align-items: center;
-    margin-top: 40px;
 }
 
 .icon-send {
@@ -864,6 +866,7 @@ section {
     transform: translate(-50%, -50%);
     width: 530px;
     height: 580px;
+    padding: 40px;
 
     background-color: var(--text-color-theme-light);
     box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
@@ -907,9 +910,6 @@ section {
 
 .modal-form {
     width: 450px;
-    padding-top: 40px;
-    margin-left: auto;
-    margin-right: auto;
 }
 
 .modal-form-field {
@@ -958,6 +958,12 @@ section {
     left: 15px;
     transform: translateY(-50%);
     color: var(--primary-text-color-theme-dark);
+
+    transition: fill 250ms var(--animation-timing-function);
+}
+
+.contact-input:focus + .contact-icon {
+    fill: var(--accent-color);
 }
 
 .comment-area {
@@ -995,7 +1001,14 @@ section {
 
 .modal-btn {
     display: block;
-    margin: 0 auto 40px auto;
+    margin: 0 auto;
+    padding: 10px 56px;
+}
+
+.checkbox-label {
+    line-height: 1.17;
+    letter-spacing: 0.03em;
+    color: var(--secondary-text-color-theme-dark);
 }
 
 .checkbox-label::before {
@@ -1005,7 +1018,6 @@ section {
     height: 15px;
     border: 2px solid var(--logo-accent-header);
     border-radius: 2px;
-    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
     cursor: pointer;
 
     margin-right: 9px;
@@ -1017,5 +1029,4 @@ section {
     background-color: var(--accent-color);
     background-repeat: no-repeat;
     background-size: contain;
-    background-origin: border-box;
 }
